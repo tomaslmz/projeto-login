@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <title>Login</title>
 </head>
 <body>
@@ -17,8 +18,19 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Realize o login para acessar sua conta e fazer as configurações no seu ambiente</p>
 
-                <form action="" method="post">
-                    
+                <form action="" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="login" id="login" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="login">Login:</label>
+                    </div>
+                    <div>
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="senha" placeholder="sua senha" autocomplete="current-password" required minlenght="8" maxlenght="20">
+                        <label for="senha">Senha: </label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueci a senha <i class="material-icons">mail</i></a>
                 </form>
             </div>
         </section>
